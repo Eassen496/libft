@@ -6,26 +6,26 @@
 /*   By: ale-roux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 23:49:50 by ale-roux          #+#    #+#             */
-/*   Updated: 2022/11/02 00:35:44 by ale-roux         ###   ########.fr       */
+/*   Updated: 2022/11/02 18:48:27 by ale-roux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 static int	ft_intlen(int nb)
 {
-	int	pass;
+	int	len;
 
-	pass = 0;
+	len = 0;
 	if (nb < 0)
 	{
-		pass++;
+		len++;
 		nb = -nb;
 	}
 	while ((nb / 10) > 10)
 	{
-		pass++;
+		len++;
 		nb / 10;
 	}
-	return (pass);
+	return (len);
 }
 
 char	*ft_itoa(int n)
