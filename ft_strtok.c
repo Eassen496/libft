@@ -6,37 +6,13 @@
 /*   By: ale-roux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 20:35:27 by ale-roux          #+#    #+#             */
-/*   Updated: 2022/11/04 12:47:18 by ale-roux         ###   ########.fr       */
+/*   Updated: 2022/11/04 12:23:55 by ale-roux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libft"
 
-static int	ft_tabclen(char *str, char c)
-{
-	int	i;
-	int	count;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (str[i] == c)
-			count++;
-		i++;
-	}
-	return (count);
-}
-
-static int	ft_strclen(char *str, char c)
-{
-	static int	i = 0;
-
-	while (str[i] != c && str[i] != '\0')
-		i++;
-	return (i);
-}
-
-static char	*ft_strccpy(char *str, char c)
+static char	*ft_strccpy(char *str, char c, int	len)
 {
 	static int	i = 0;
 	char		*cpy;
@@ -48,21 +24,60 @@ static char	*ft_strccpy(char *str, char c)
 	return (cpy);
 }
 
-char	**ft_split(char const *s, char c)
+static int	verif(char *str, int len)
 {
-	char	**strtab;
-	int		tablen;
-	int		i;
-	int		len;
+	int	i;
+	int	count;
+
+	i = 0;
+	while (i <= len)
+	{
+		if (str[i] == -1)
+			count++;
+		i++;
+	}
+	return (count);
+}
+
+static char	strclnr(char	*str, const char sep)
+{
+	int	i;
+	int	len;
 
 	i = 0;
 	len = ft_strlen(str);
-	tablen = ft_tabclen(s);
-	strtab = malloc((tablen) * sizeof(char *));
-	while (i != (tablen + 1))
+	while (str[i])
 	{
-		strtab[i] = ft_strccpy(s, c, len);
+		if (str[i] == sep)
+			str[i] = -1;
 		i++;
 	}
-	return (strtab);
+	return (str);
 }
+
+static char ft_strtok_custom(char *str, const char *sep)
+{
+	int	i;
+	int	lenstr;
+	int	lensep;
+
+	i = 0;
+	lenstr = ft_strlen(str);
+	lensep = ft_strlen(sep);
+	while (i <= sep)
+	{
+		ft_strclnr(str, sep[i]);
+		i++;
+	}
+	if (verif(str, lenstr) == lenstr)
+		return (NULL);
+	return (str);
+}
+
+char **ft_split(char const *s, char c)
+{
+	char	**strtab;
+	int		len;
+
+	len = ft_strlen(s);
+	strtab = malloc((len + 1) * sizeof(char *)
