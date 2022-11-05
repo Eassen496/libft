@@ -6,9 +6,27 @@
 /*   By: ale-roux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 02:11:54 by ale-roux          #+#    #+#             */
-/*   Updated: 2022/11/05 02:12:39 by ale-roux         ###   ########.fr       */
+/*   Updated: 2022/11/05 21:02:37 by ale-roux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*strdup(const char *s1)
+#include <stdlib.h>
+
+char	*ft_strdup(const char *s1)
 {
+	int		i;
+	char	*dup;
+	int		len;
+
+	i = 0;
+	len  = ft_strlen(s1);
+	dup = malloc((len + 1) * sizeof(char));
+	if (!dup)
+		return (NULL);
+	while (s1[i])
+	{
+		dup[i] = s1[i];
+		i++;
+	}
+	return (dup);
+}
