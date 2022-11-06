@@ -6,9 +6,12 @@
 /*   By: ale-roux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 23:49:50 by ale-roux          #+#    #+#             */
-/*   Updated: 2022/11/02 18:48:27 by ale-roux         ###   ########.fr       */
+/*   Updated: 2022/11/07 00:11:49 by ale-roux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
+#include <stdlib.h>
 
 static int	ft_intlen(int nb)
 {
@@ -23,7 +26,7 @@ static int	ft_intlen(int nb)
 	while ((nb / 10) > 10)
 	{
 		len++;
-		nb / 10;
+		nb = nb / 10;
 	}
 	return (len);
 }
@@ -42,7 +45,7 @@ char	*ft_itoa(int n)
 		return (NULL);
 	if (n < 0)
 	{
-		nbr[0] == '-';
+		nbr[0] = '-';
 		n = -n;
 		y++;
 	}

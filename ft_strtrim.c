@@ -6,22 +6,20 @@
 /*   By: ale-roux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 01:24:11 by ale-roux          #+#    #+#             */
-/*   Updated: 2022/11/06 21:18:53 by ale-roux         ###   ########.fr       */
+/*   Updated: 2022/11/07 00:07:02 by ale-roux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-static int	charsrch(char *s1, char set)
+static int	charsrch(char *s1, char *set)
 {
 	int	i;
 	int	x;
-	int	len;
 
 	i = 0;
 	x = 0;
-	len = ft_strlen(s1);
 	while (set[x])
 	{
 		if (s1[i++] == set[x])
@@ -56,8 +54,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		mallocsize;
 	char	*str;
 
-	mallocsize = ft_strlen(s1) - charrsrch(s1, set) - charsrch(s1, set);
-	i = charsrch(s1, set);
+	mallocsize = ft_strlen((char *)s1) - charrsrch((char *)s1, (char *)set) - charsrch((char *)s1, (char *)set);
+	i = charsrch((char *)s1, (char *)set);
 	str = malloc((mallocsize + 1) * sizeof(char));
 	if (!str)
 		return (NULL);

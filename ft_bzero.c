@@ -6,7 +6,7 @@
 /*   By: ale-roux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 16:19:09 by ale-roux          #+#    #+#             */
-/*   Updated: 2022/11/01 13:37:59 by ale-roux         ###   ########.fr       */
+/*   Updated: 2022/11/07 00:08:16 by ale-roux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_bzero(void *str, size_t n)
 {
-	int		i;
-	char	*str2;
+	unsigned int	i;
+	char			*str2;
 
 	i = 0;
 	str2 = str;
@@ -24,4 +24,5 @@ void	*ft_bzero(void *str, size_t n)
 		str2[i] = 0;
 		i++;
 	}
+	return ((char *)str2);
 }
