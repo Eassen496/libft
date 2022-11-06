@@ -6,7 +6,7 @@
 /*   By: ale-roux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 01:24:11 by ale-roux          #+#    #+#             */
-/*   Updated: 2022/11/05 23:21:44 by ale-roux         ###   ########.fr       */
+/*   Updated: 2022/11/06 21:18:53 by ale-roux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ static int	charrsrch(char *s1, char *set)
 	return (i);
 }
 
-char *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	int		i;
 	int		x;
