@@ -6,7 +6,7 @@
 /*   By: ale-roux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 23:26:59 by ale-roux          #+#    #+#             */
-/*   Updated: 2022/11/08 10:06:05 by ale-roux         ###   ########.fr       */
+/*   Updated: 2022/11/08 19:03:08 by ale-roux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 	strdst = (char *)dst;
 	strsrc = (char *)src;
 	i = 0;
+	if (dst == NULL && src == NULL)
+		return (NULL);
 	while (i != n)
 	{
 		strdst[i] = strsrc[i];
