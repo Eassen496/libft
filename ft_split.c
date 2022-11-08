@@ -6,7 +6,7 @@
 /*   By: ale-roux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 20:35:27 by ale-roux          #+#    #+#             */
-/*   Updated: 2022/11/08 09:22:55 by ale-roux         ###   ########.fr       */
+/*   Updated: 2022/11/08 10:11:15 by ale-roux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,12 @@ static int	ft_tabclen(char *str, char c)
 
 static char	*ft_strccpy(char *str, char c)
 {
-	static int	i = 0;
+	static int	i = -1;
 	char		*cpy;
 	int			x;
 
 	x = 0;
+	i++;
 	cpy = str;
 	while (str[i] != c)
 		cpy[x++] = str[i++];
