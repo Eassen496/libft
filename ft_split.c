@@ -6,7 +6,7 @@
 /*   By: ale-roux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 20:35:27 by ale-roux          #+#    #+#             */
-/*   Updated: 2022/11/04 12:47:18 by ale-roux         ###   ########.fr       */
+/*   Updated: 2022/11/08 09:22:55 by ale-roux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ static int	ft_tabclen(char *str, char c)
 	int	count;
 
 	i = 0;
+	count = 0;
 	while (str[i] != '\0')
 	{
 		if (str[i] == c)
@@ -27,15 +28,6 @@ static int	ft_tabclen(char *str, char c)
 	return (count);
 }
 
-static int	ft_strclen(char *str, char c)
-{
-	static int	i = 0;
-
-	while (str[i] != c && str[i] != '\0')
-		i++;
-	return (i);
-}
-
 static char	*ft_strccpy(char *str, char c)
 {
 	static int	i = 0;
@@ -43,6 +35,7 @@ static char	*ft_strccpy(char *str, char c)
 	int			x;
 
 	x = 0;
+	cpy = str;
 	while (str[i] != c)
 		cpy[x++] = str[i++];
 	return (cpy);
@@ -54,14 +47,16 @@ char	**ft_split(char const *s, char c)
 	int		tablen;
 	int		i;
 	int		len;
+	char	*str;
 
 	i = 0;
+	str = (char *)s;
 	len = ft_strlen(str);
-	tablen = ft_tabclen(s);
+	tablen = ft_tabclen(str, c);
 	strtab = malloc((tablen) * sizeof(char *));
 	while (i != (tablen + 1))
 	{
-		strtab[i] = ft_strccpy(s, c, len);
+		strtab[i] = ft_strccpy(str, c);
 		i++;
 	}
 	return (strtab);

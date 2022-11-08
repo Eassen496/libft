@@ -6,7 +6,7 @@
 /*   By: ale-roux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 16:56:15 by ale-roux          #+#    #+#             */
-/*   Updated: 2022/11/01 14:38:15 by ale-roux         ###   ########.fr       */
+/*   Updated: 2022/11/08 09:23:22 by ale-roux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	int	i;
-	int	result;
+	unsigned int	i;
+	int				result;
 
 	i = 0;
 	result = 0;

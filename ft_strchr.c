@@ -6,9 +6,11 @@
 /*   By: ale-roux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 10:55:55 by ale-roux          #+#    #+#             */
-/*   Updated: 2022/11/01 23:26:44 by ale-roux         ###   ########.fr       */
+/*   Updated: 2022/11/08 09:51:14 by ale-roux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 static int	ft_lsch(char *str, char c)
 {
@@ -20,7 +22,7 @@ static int	ft_lsch(char *str, char c)
 	return (i);
 }
 
-char	*strchr(char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	char	chr;
 	int		i;
@@ -28,9 +30,9 @@ char	*strchr(char *s, int c)
 	if (c <= 127 && c >= 0 && c != '\0')
 	{
 		chr = c;
-		i = ft_lsch(s, chr);
-		return (s[i]);
+		i = ft_lsch((char *)s, chr);
 	}
 	else
-		return (NULL);
+		return (0);
+	return ((char *)&s[i]);
 }

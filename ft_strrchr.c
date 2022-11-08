@@ -6,7 +6,7 @@
 /*   By: ale-roux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 23:14:59 by ale-roux          #+#    #+#             */
-/*   Updated: 2022/11/07 00:00:14 by ale-roux         ###   ########.fr       */
+/*   Updated: 2022/11/08 09:28:59 by ale-roux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,8 @@ char	*ft_strrchr(const char *s, int c)
 	{
 		chr = c;
 		i = ft_rlsch(str, chr);
-		return ((char*)&s[i]);
 	}
 	else
 		return (NULL);
+	return ((char *)&s[i]);
 }

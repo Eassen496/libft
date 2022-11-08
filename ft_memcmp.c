@@ -6,21 +6,25 @@
 /*   By: ale-roux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 01:56:19 by ale-roux          #+#    #+#             */
-/*   Updated: 2022/11/05 01:59:20 by ale-roux         ###   ########.fr       */
+/*   Updated: 2022/11/08 09:21:07 by ale-roux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int	memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	int	i;
+	unsigned int	i;
+	char			*str1;
+	char			*str2;
 
 	i = 0;
+	str1 = (char *)s1;
+	str2 = (char *)s2;
 	while (i != n)
 	{
-		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
+		if (str1[i] != str2[i])
+			return (str1[i] - str2[i]);
 		i++;
 	}
 	return (0);
