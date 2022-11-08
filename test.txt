@@ -1,331 +1,0 @@
-╔══════════════════════════════════════════════════════════════════════════════╗
-║                Welcome to Francinette, a 42 tester framework!                ║
-╚═══════════════════════╦══════════════════════════════╦═══════════════════════╝
-                        ║             libft            ║
-                        ╚══════════════════════════════╝
-⠋ Preparing framework⠙ Preparing framework⠹ Preparing framework⠸ Preparing framework⠼ Preparing framework⠴ Preparing framework⠦ Preparing framework⠧ Preparing framework⠇ Preparing framework⠏ Preparing framework⠋ Preparing framework⠙ Preparing framework⠹ Preparing framework⠸ Preparing framework⠼ Preparing framework⠴ Preparing framework⠦ Preparing framework⠧ Preparing framework⠇ Preparing framework⠏ Preparing framework⠋ Preparing framework⠙ Preparing framework⠹ Preparing framework⠸ Preparing framework⠼ Preparing framework✔ Preparing framework
-⠋ Executing: norminette⠙ Executing: norminette⠹ Executing: norminette⠸ Executing: norminette⠼ Executing: norminette⠴ Executing: norminette⠦ Executing: norminette✖ Executing: norminette
-ft_atoi.c: OK!
-ft_bzero.c: OK!
-ft_calloc.c: OK!
-ft_isalnum.c: OK!
-ft_isalpha.c: OK!
-ft_isascii.c: OK!
-ft_isdigit.c: OK!
-ft_isprint.c: OK!
-ft_itoa.c: OK!
-ft_memchr.c: OK!
-ft_memcmp.c: OK!
-ft_memcpy.c: OK!
-ft_memset.c: OK!
-ft_putchar_fd.c: OK!
-ft_putendl_fd.c: OK!
-ft_putnbr_fd.c: OK!
-ft_putstr_fd.c: OK!
-ft_split.c: OK!
-ft_strchr.c: OK!
-ft_strdup.c: OK!
-ft_strjoin.c: OK!
-ft_strlcat.c: Error!
-Error: TOO_FEW_TAB          (line:  19, col:   1):	Missing tabs for indent level
-Error: SPACE_REPLACE_TAB    (line:  19, col:   5):	Found space when expecting tab
-Error: CONSECUTIVE_SPC      (line:  19, col:  11):	Two or more consecutives spaces
-Error: SPACE_REPLACE_TAB    (line:  19, col:  11):	Found space when expecting tab
-Error: TOO_FEW_TAB          (line:  20, col:   1):	Missing tabs for indent level
-Error: SPACE_REPLACE_TAB    (line:  20, col:   5):	Found space when expecting tab
-Error: CONSECUTIVE_SPC      (line:  20, col:  11):	Two or more consecutives spaces
-Error: SPACE_REPLACE_TAB    (line:  20, col:  11):	Found space when expecting tab
-Error: TOO_FEW_TAB          (line:  22, col:   1):	Missing tabs for indent level
-Error: SPACE_REPLACE_TAB    (line:  22, col:   5):	Found space when expecting tab
-Error: TOO_FEW_TAB          (line:  23, col:   1):	Missing tabs for indent level
-Error: SPACE_REPLACE_TAB    (line:  23, col:   9):	Found space when expecting tab
-Error: SPACE_REPLACE_TAB    (line:  24, col:   5):	Found space when expecting tab
-Error: SPACE_REPLACE_TAB    (line:  25, col:   5):	Found space when expecting tab
-Error: TOO_FEW_TAB          (line:  26, col:   1):	Missing tabs for indent level
-Error: SPACE_REPLACE_TAB    (line:  26, col:   5):	Found space when expecting tab
-Error: TOO_FEW_TAB          (line:  27, col:   1):	Missing tabs for indent level
-Error: SPACE_EMPTY_LINE     (line:  27, col:   5):	Space on empty line
-Error: SPACE_REPLACE_TAB    (line:  28, col:   9):	Found space when expecting tab
-Error: SPACE_REPLACE_TAB    (line:  29, col:   9):	Found space when expecting tab
-Error: TOO_FEW_TAB          (line:  30, col:   1):	Missing tabs for indent level
-Error: SPACE_EMPTY_LINE     (line:  30, col:   5):	Space on empty line
-Error: SPACE_REPLACE_TAB    (line:  31, col:   5):	Found space when expecting tab
-Error: TOO_FEW_TAB          (line:  32, col:   1):	Missing tabs for indent level
-Error: SPACE_REPLACE_TAB    (line:  32, col:   5):	Found space when expecting tab
-ft_strlcpy.c: OK!
-ft_strlen.c: OK!
-ft_strncmp.c: OK!
-ft_strrchr.c: OK!
-ft_strtok.c: Error!
-	Error: Nested parentheses, braces or brackets are not correctly closed
-ft_strtrim.c: OK!
-ft_substr.c: OK!
-ft_tolower.c: OK!
-ft_toupper.c: OK!
-libft.h: OK!
-
-⠋ Executing: make fclean all (no bonus)⠙ Executing: make fclean all (no bonus)⠹ Executing: make fclean all (no bonus)⠸ Executing: make fclean all (no bonus)⠼ Executing: make fclean all (no bonus)⠴ Executing: make fclean all (no bonus)⠦ Executing: make fclean all (no bonus)⠧ Executing: make fclean all (no bonus)⠇ Executing: make fclean all (no bonus)⠏ Executing: make fclean all (no bonus)⠋ Executing: make fclean all (no bonus)⠙ Executing: make fclean all (no bonus)⠹ Executing: make fclean all (no bonus)⠸ Executing: make fclean all (no bonus)⠼ Executing: make fclean all (no bonus)✔ Executing: make fclean all (no bonus)
-ℹ Executing: libft-war-machine (https://github.com/y3ll0w42/libft-war-machine)
-[1m[34m--------------------------------------------------------------------------------
-|[32GCOMPILING LIBFT[80G|
---------------------------------------------------------------------------------
-[0mrules:
-all[12G$(NAME)[26Gfclean[39Gre[52Gclean[64Gbonus[74Glibft.a
-[32mok[0m[12G[32mok[0m[26G[32mok[0m[39G[32mok[0m[52G[32mok[0m[64G[31mmissing[0m[74G[32mfound
-[0m
-[1m[34mFUNCTION[18GTESTS[39GRESULT
-[0m[36mft_isalpha[18G[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[39G[32mOK
-[0m[36mft_isdigit[18G[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[39G[32mOK
-[0m[36mft_isalnum[18G[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[39G[32mOK
-[0m[36mft_isascii[18G[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[39G[32mOK
-[0m[36mft_isprint[18G[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[39G[32mOK
-[0m[36mft_strlen[18G[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[39G[32mOK
-[0m[36mft_memset[18G[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[39G[32mOK
-[0m[36mft_bzero[18G[32m✓[0m[32m✓[0m[39G[32mOK
-[0m[36mft_memcpy[18G[32m✓[0m[32m✓[0m[32m✓[0m[39G[32mOK
-[0m[36mft_memmove[18G[31mcompil. failed[0m[39G[31mKO
-[0m[36mft_strlcpy[18G[31m✗[0m[31m✗[0m[31m✗[0m[32m✓[0m[32m✓[0m[39G[31mKO
-[0m[36mft_strlcat[18G[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[39G[32mOK
-[0m[36mft_toupper[18G[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[39G[32mOK
-[0m[36mft_tolower[18G[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[39G[32mOK
-[0m[36mft_strchr[18G[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[39G[32mOK
-[0m[36mft_strrchr[18G[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[39G[32mOK
-[0m[36mft_strncmp[18G[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[31m✗[0m[39G[31mKO
-[0m[36mft_memchr[18G[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[39G[32mOK
-[0m[36mft_memcmp[18G[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[39G[32mOK
-[0m[36mft_strnstr[18G[31mcompil. failed[0m[39G[31mKO
-[0m[36mft_atoi[18G[32m✓[0m[31m✗[0m[32m✓[0m[32m✓[0m[31m✗[0m[31m✗[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[31m✗[0m[32m✓[0m[31m✗[0m[32m✓[0m[32m✓[0m[32m✓[0m[39G[31mKO
-[0m[36mft_calloc[18G[32m✓[0m[39G[32mOK
-[0m[36mft_strdup[18G[32m✓[0m[39G[32mOK
-[0m[36mft_substr[18G[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[39G[32mOK
-[0m[36mft_strjoin[18G[31m✗[0m[31m✗[0m[31m✗[0m[31mA[0m[39G[31mKO
-[0m[36mft_strtrim[18G[31mA[0m[31mA[0m[31mA[0m[31mA[0m[31mA[0m[39G[31mKO
-[0m[36mft_split[18G[31mA[0m[31mA[0m[31mA[0m[31mA[0m[31mA[0m[31mA[0m[39G[31mKO
-[0m[36mft_itoa[18G[31mA[0m[31mA[0m[31mA[0m[31mA[0m[31mA[0m[31mA[0m[31mA[0m[31mA[0m[31mA[0m[31mA[0m[39G[31mKO
-[0m[36mft_strmapi[18G[31mcompil. failed[0m[39G[31mKO
-[0m[36mft_striteri[18G[31mcompil. failed[0m[39G[31mKO
-[0m[36mft_putchar_fd[18G[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[39G[32mOK
-[0m[36mft_putstr_fd[18G[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[39G[32mOK
-[0m[36mft_putendl_fd[18G[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[39G[32mOK
-[0m[36mft_putnbr_fd[18G[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[32m✓[0m[39G[32mOK
-[0m
-Abort: A  Bus error: B  Segmentation fault: S  Timeout: T
-
-More information in: /Users/ale-roux/francinette/temp/libft/war-machine/deepthought
-
-Errors in strlcpy: /Users/ale-roux/francinette/temp/libft/war-machine/tests/Part1_functions/ft_strlcpy
-Test 1:
-    ft_print_result(ft_strlcpy(dest, "lorem", 15));
-    write(1, "\n", 1);
-    write(1, dest, 15);
-Expected (cat -e test01.output):
-5$
-lorem^@^@^@^@^@^@^@^@^@^@
-Your result (cat -e user_output_test01):
-5$
-loremr^@^@^@^@^@^@^@^@^@
-Test 2:
-    ft_print_result(ft_strlcpy(dest, "", 15));
-    write(1, "\n", 1);
-    write(1, dest, 15);
-Expected (cat -e test02.output):
-0$
-^@rrrrr^@^@^@^@^@^@^@^@^@
-Your result (cat -e user_output_test02):
-0$
-rrrrrr^@^@^@^@^@^@^@^@^@
-Test 3:
-    ft_print_result(ft_strlcpy(dest, "lorem ipsum", 3));
-    write(1, "\n", 1);
-    write(1, dest, 15);
-Expected (cat -e test03.output):
-11$
-lo^@rrr^@^@^@^@^@^@^@^@^@
-Your result (cat -e user_output_test03):
-11$
-lor^@rr^@^@^@^@^@^@^@^@^@
-Errors in strncmp: /Users/ale-roux/francinette/temp/libft/war-machine/tests/Part1_functions/ft_strncmp
-Test 11:
-    ft_print_result(ft_strncmp("test\200", "test\0", 6));
-Expected (cat -e test11.output):
-1
-Your result (cat -e user_output_test11):
--1
-Errors in atoi: /Users/ale-roux/francinette/temp/libft/war-machine/tests/Part1_functions/ft_atoi
-Test 2:
-    ft_print_result(ft_atoi("546:5"));
-Expected (cat -e test02.output):
-546
-Your result (cat -e user_output_test02):
-0
-Test 5:
-    ft_print_result(ft_atoi("054854"));
-Expected (cat -e test05.output):
-54854
-Your result (cat -e user_output_test05):
-...
-
-File too large. To see full report open: /Users/ale-roux/francinette/temp/libft/war-machine/errors.log
-
-⠋ Compiling tests: libftTester (https://github.com/Tripo (...)⠙ Compiling tests: libftTester (https://github.com/Tripo (...)⠹ Compiling tests: libftTester (https://github.com/Tripo (...)⠸ Compiling tests: libftTester (https://github.com/Tripo (...)⠼ Compiling tests: libftTester (https://github.com/Tripo (...)⠴ Compiling tests: libftTester (https://github.com/Tripo (...)⠦ Compiling tests: libftTester (https://github.com/Tripo (...)⠧ Compiling tests: libftTester (https://github.com/Tripo (...)⠇ Compiling tests: libftTester (https://github.com/Tripo (...)⠏ Compiling tests: libftTester (https://github.com/Tripo (...)⠋ Compiling tests: libftTester (https://github.com/Tripo (...)⠙ Compiling tests: libftTester (https://github.com/Tripo (...)⠹ Compiling tests: libftTester (https://github.com/Tripo (...)⠸ Compiling tests: libftTester (https://github.com/Tripo (...)⠼ Compiling tests: libftTester (https://github.com/Tripo (...)⠴ Compiling tests: libftTester (https://github.com/Tripo (...)⠦ Compiling tests: libftTester (https://github.com/Tripo (...)⠧ Compiling tests: libftTester (https://github.com/Tripo (...)⠇ Compiling tests: libftTester (https://github.com/Tripo (...)⠏ Compiling tests: libftTester (https://github.com/Tripo (...)⠋ Compiling tests: libftTester (https://github.com/Tripo (...)⠙ Compiling tests: libftTester (https://github.com/Tripo (...)⠹ Compiling tests: libftTester (https://github.com/Tripo (...)⠸ Compiling tests: libftTester (https://github.com/Tripo (...)⠼ Compiling tests: libftTester (https://github.com/Tripo (...)⠴ Compiling tests: libftTester (https://github.com/Tripo (...)⠦ Compiling tests: libftTester (https://github.com/Tripo (...)⠧ Compiling tests: libftTester (https://github.com/Tripo (...)⠇ Compiling tests: libftTester (https://github.com/Tripo (...)⠏ Compiling tests: libftTester (https://github.com/Tripo (...)⠋ Compiling tests: libftTester (https://github.com/Tripo (...)⠙ Compiling tests: libftTester (https://github.com/Tripo (...)⠹ Compiling tests: libftTester (https://github.com/Tripo (...)⠸ Compiling tests: libftTester (https://github.com/Tripo (...)⠼ Compiling tests: libftTester (https://github.com/Tripo (...)⠴ Compiling tests: libftTester (https://github.com/Tripo (...)⠦ Compiling tests: libftTester (https://github.com/Tripo (...)⠧ Compiling tests: libftTester (https://github.com/Tripo (...)⠇ Compiling tests: libftTester (https://github.com/Tripo (...)⠏ Compiling tests: libftTester (https://github.com/Tripo (...)⠋ Compiling tests: libftTester (https://github.com/Tripo (...)⠙ Compiling tests: libftTester (https://github.com/Tripo (...)⠹ Compiling tests: libftTester (https://github.com/Tripo (...)⠸ Compiling tests: libftTester (https://github.com/Tripo (...)⠼ Compiling tests: libftTester (https://github.com/Tripo (...)⠴ Compiling tests: libftTester (https://github.com/Tripo (...)⠦ Compiling tests: libftTester (https://github.com/Tripo (...)⠧ Compiling tests: libftTester (https://github.com/Tripo (...)⠇ Compiling tests: libftTester (https://github.com/Tripo (...)⠏ Compiling tests: libftTester (https://github.com/Tripo (...)⠋ Compiling tests: libftTester (https://github.com/Tripo (...)⠙ Compiling tests: libftTester (https://github.com/Tripo (...)⠹ Compiling tests: libftTester (https://github.com/Tripo (...)⠸ Compiling tests: libftTester (https://github.com/Tripo (...)⠼ Compiling tests: libftTester (https://github.com/Tripo (...)⠴ Compiling tests: libftTester (https://github.com/Tripo (...)⠦ Compiling tests: libftTester (https://github.com/Tripo (...)⠧ Compiling tests: libftTester (https://github.com/Tripo (...)⠇ Compiling tests: libftTester (https://github.com/Tripo (...)⠏ Compiling tests: libftTester (https://github.com/Tripo (...)⠋ Compiling tests: libftTester (https://github.com/Tripo (...)⠙ Compiling tests: libftTester (https://github.com/Tripo (...)⠹ Compiling tests: libftTester (https://github.com/Tripo (...)⠸ Compiling tests: libftTester (https://github.com/Tripo (...)⠼ Compiling tests: libftTester (https://github.com/Tripo (...)⠴ Compiling tests: libftTester (https://github.com/Tripo (...)⠦ Compiling tests: libftTester (https://github.com/Tripo (...)⠧ Compiling tests: libftTester (https://github.com/Tripo (...)⠇ Compiling tests: libftTester (https://github.com/Tripo (...)⠏ Compiling tests: libftTester (https://github.com/Tripo (...)⠋ Compiling tests: libftTester (https://github.com/Tripo (...)⠙ Compiling tests: libftTester (https://github.com/Tripo (...)⠹ Compiling tests: libftTester (https://github.com/Tripo (...)⠸ Compiling tests: libftTester (https://github.com/Tripo (...)⠼ Compiling tests: libftTester (https://github.com/Tripo (...)⠴ Compiling tests: libftTester (https://github.com/Tripo (...)⠦ Compiling tests: libftTester (https://github.com/Tripo (...)⠧ Compiling tests: libftTester (https://github.com/Tripo (...)⠇ Compiling tests: libftTester (https://github.com/Tripo (...)⠏ Compiling tests: libftTester (https://github.com/Tripo (...)⠋ Compiling tests: libftTester (https://github.com/Tripo (...)⠙ Compiling tests: libftTester (https://github.com/Tripo (...)⠹ Compiling tests: libftTester (https://github.com/Tripo (...)⠸ Compiling tests: libftTester (https://github.com/Tripo (...)⠼ Compiling tests: libftTester (https://github.com/Tripo (...)⠴ Compiling tests: libftTester (https://github.com/Tripo (...)⠦ Compiling tests: libftTester (https://github.com/Tripo (...)⠧ Compiling tests: libftTester (https://github.com/Tripo (...)⠇ Compiling tests: libftTester (https://github.com/Tripo (...)⠏ Compiling tests: libftTester (https://github.com/Tripo (...)⠋ Compiling tests: libftTester (https://github.com/Tripo (...)⠙ Compiling tests: libftTester (https://github.com/Tripo (...)⠹ Compiling tests: libftTester (https://github.com/Tripo (...)⠸ Compiling tests: libftTester (https://github.com/Tripo (...)⠼ Compiling tests: libftTester (https://github.com/Tripo (...)⠴ Compiling tests: libftTester (https://github.com/Tripo (...)⠦ Compiling tests: libftTester (https://github.com/Tripo (...)⠧ Compiling tests: libftTester (https://github.com/Tripo (...)⠇ Compiling tests: libftTester (https://github.com/Tripo (...)⠏ Compiling tests: libftTester (https://github.com/Tripo (...)⠋ Compiling tests: libftTester (https://github.com/Tripo (...)⠙ Compiling tests: libftTester (https://github.com/Tripo (...)⠹ Compiling tests: libftTester (https://github.com/Tripo (...)⠸ Compiling tests: libftTester (https://github.com/Tripo (...)⠼ Compiling tests: libftTester (https://github.com/Tripo (...)⠴ Compiling tests: libftTester (https://github.com/Tripo (...)⠦ Compiling tests: libftTester (https://github.com/Tripo (...)⠧ Compiling tests: libftTester (https://github.com/Tripo (...)⠇ Compiling tests: libftTester (https://github.com/Tripo (...)⠏ Compiling tests: libftTester (https://github.com/Tripo (...)⠋ Compiling tests: libftTester (https://github.com/Tripo (...)⠙ Compiling tests: libftTester (https://github.com/Tripo (...)⠹ Compiling tests: libftTester (https://github.com/Tripo (...)⠸ Compiling tests: libftTester (https://github.com/Tripo (...)⠼ Compiling tests: libftTester (https://github.com/Tripo (...)⠴ Compiling tests: libftTester (https://github.com/Tripo (...)⠦ Compiling tests: libftTester (https://github.com/Tripo (...)⠧ Compiling tests: libftTester (https://github.com/Tripo (...)⠇ Compiling tests: libftTester (https://github.com/Tripo (...)⠏ Compiling tests: libftTester (https://github.com/Tripo (...)⠋ Compiling tests: libftTester (https://github.com/Tripo (...)⠙ Compiling tests: libftTester (https://github.com/Tripo (...)⠹ Compiling tests: libftTester (https://github.com/Tripo (...)⠸ Compiling tests: libftTester (https://github.com/Tripo (...)⠼ Compiling tests: libftTester (https://github.com/Tripo (...)⠴ Compiling tests: libftTester (https://github.com/Tripo (...)⠦ Compiling tests: libftTester (https://github.com/Tripo (...)⠧ Compiling tests: libftTester (https://github.com/Tripo (...)⠇ Compiling tests: libftTester (https://github.com/Tripo (...)⠏ Compiling tests: libftTester (https://github.com/Tripo (...)⠋ Compiling tests: libftTester (https://github.com/Tripo (...)⠙ Compiling tests: libftTester (https://github.com/Tripo (...)⠹ Compiling tests: libftTester (https://github.com/Tripo (...)⠸ Compiling tests: libftTester (https://github.com/Tripo (...)⠼ Compiling tests: libftTester (https://github.com/Tripo (...)⠴ Compiling tests: libftTester (https://github.com/Tripo (...)⠦ Compiling tests: libftTester (https://github.com/Tripo (...)⠧ Compiling tests: libftTester (https://github.com/Tripo (...)⠇ Compiling tests: libftTester (https://github.com/Tripo (...)⠏ Compiling tests: libftTester (https://github.com/Tripo (...)⠋ Compiling tests: libftTester (https://github.com/Tripo (...)⠙ Compiling tests: libftTester (https://github.com/Tripo (...)⠹ Compiling tests: libftTester (https://github.com/Tripo (...)⠸ Compiling tests: libftTester (https://github.com/Tripo (...)⠼ Compiling tests: libftTester (https://github.com/Tripo (...)⠴ Compiling tests: libftTester (https://github.com/Tripo (...)⠦ Compiling tests: libftTester (https://github.com/Tripo (...)⠧ Compiling tests: libftTester (https://github.com/Tripo (...)⠇ Compiling tests: libftTester (https://github.com/Tripo (...)⠏ Compiling tests: libftTester (https://github.com/Tripo (...)⠋ Compiling tests: libftTester (https://github.com/Tripo (...)⠙ Compiling tests: libftTester (https://github.com/Tripo (...)⠹ Compiling tests: libftTester (https://github.com/Tripo (...)⠸ Compiling tests: libftTester (https://github.com/Tripo (...)⠼ Compiling tests: libftTester (https://github.com/Tripo (...)⠴ Compiling tests: libftTester (https://github.com/Tripo (...)⠦ Compiling tests: libftTester (https://github.com/Tripo (...)⠧ Compiling tests: libftTester (https://github.com/Tripo (...)⠇ Compiling tests: libftTester (https://github.com/Tripo (...)⠏ Compiling tests: libftTester (https://github.com/Tripo (...)⠋ Compiling tests: libftTester (https://github.com/Tripo (...)⠙ Compiling tests: libftTester (https://github.com/Tripo (...)⠹ Compiling tests: libftTester (https://github.com/Tripo (...)⠸ Compiling tests: libftTester (https://github.com/Tripo (...)⠼ Compiling tests: libftTester (https://github.com/Tripo (...)⠴ Compiling tests: libftTester (https://github.com/Tripo (...)⠦ Compiling tests: libftTester (https://github.com/Tripo (...)⠧ Compiling tests: libftTester (https://github.com/Tripo (...)⠇ Compiling tests: libftTester (https://github.com/Tripo (...)✖ Compiling tests: libftTester (https://github.com/Tripouille/libftTester)
-Undefined symbols for architecture x86_64:
-  "_ft_memmove", referenced from:
-      _main in ft_memmove_test.o
-ld: symbol(s) not found for architecture x86_64
-clang: error: linker command failed with exit code 1 (use -v to see invocation)
-
-Problem creating executable for memmove
-⠋ Compiling tests: libft-unit-test (https://github.com/a (...)⠙ Compiling tests: libft-unit-test (https://github.com/a (...)⠹ Compiling tests: libft-unit-test (https://github.com/a (...)⠸ Compiling tests: libft-unit-test (https://github.com/a (...)⠼ Compiling tests: libft-unit-test (https://github.com/a (...)⠴ Compiling tests: libft-unit-test (https://github.com/a (...)⠦ Compiling tests: libft-unit-test (https://github.com/a (...)⠧ Compiling tests: libft-unit-test (https://github.com/a (...)⠇ Compiling tests: libft-unit-test (https://github.com/a (...)⠏ Compiling tests: libft-unit-test (https://github.com/a (...)⠋ Compiling tests: libft-unit-test (https://github.com/a (...)⠙ Compiling tests: libft-unit-test (https://github.com/a (...)⠹ Compiling tests: libft-unit-test (https://github.com/a (...)⠸ Compiling tests: libft-unit-test (https://github.com/a (...)⠼ Compiling tests: libft-unit-test (https://github.com/a (...)⠴ Compiling tests: libft-unit-test (https://github.com/a (...)⠦ Compiling tests: libft-unit-test (https://github.com/a (...)⠧ Compiling tests: libft-unit-test (https://github.com/a (...)⠇ Compiling tests: libft-unit-test (https://github.com/a (...)⠏ Compiling tests: libft-unit-test (https://github.com/a (...)⠋ Compiling tests: libft-unit-test (https://github.com/a (...)⠙ Compiling tests: libft-unit-test (https://github.com/a (...)⠹ Compiling tests: libft-unit-test (https://github.com/a (...)⠸ Compiling tests: libft-unit-test (https://github.com/a (...)⠼ Compiling tests: libft-unit-test (https://github.com/a (...)⠴ Compiling tests: libft-unit-test (https://github.com/a (...)⠦ Compiling tests: libft-unit-test (https://github.com/a (...)⠧ Compiling tests: libft-unit-test (https://github.com/a (...)⠇ Compiling tests: libft-unit-test (https://github.com/a (...)⠏ Compiling tests: libft-unit-test (https://github.com/a (...)⠋ Compiling tests: libft-unit-test (https://github.com/a (...)⠙ Compiling tests: libft-unit-test (https://github.com/a (...)⠹ Compiling tests: libft-unit-test (https://github.com/a (...)⠸ Compiling tests: libft-unit-test (https://github.com/a (...)⠼ Compiling tests: libft-unit-test (https://github.com/a (...)⠴ Compiling tests: libft-unit-test (https://github.com/a (...)⠦ Compiling tests: libft-unit-test (https://github.com/a (...)⠧ Compiling tests: libft-unit-test (https://github.com/a (...)⠇ Compiling tests: libft-unit-test (https://github.com/a (...)⠏ Compiling tests: libft-unit-test (https://github.com/a (...)⠋ Compiling tests: libft-unit-test (https://github.com/a (...)⠙ Compiling tests: libft-unit-test (https://github.com/a (...)⠹ Compiling tests: libft-unit-test (https://github.com/a (...)⠸ Compiling tests: libft-unit-test (https://github.com/a (...)⠼ Compiling tests: libft-unit-test (https://github.com/a (...)⠴ Compiling tests: libft-unit-test (https://github.com/a (...)⠦ Compiling tests: libft-unit-test (https://github.com/a (...)⠧ Compiling tests: libft-unit-test (https://github.com/a (...)⠇ Compiling tests: libft-unit-test (https://github.com/a (...)⠏ Compiling tests: libft-unit-test (https://github.com/a (...)⠋ Compiling tests: libft-unit-test (https://github.com/a (...)⠙ Compiling tests: libft-unit-test (https://github.com/a (...)⠹ Compiling tests: libft-unit-test (https://github.com/a (...)⠸ Compiling tests: libft-unit-test (https://github.com/a (...)⠼ Compiling tests: libft-unit-test (https://github.com/a (...)⠴ Compiling tests: libft-unit-test (https://github.com/a (...)⠦ Compiling tests: libft-unit-test (https://github.com/a (...)⠧ Compiling tests: libft-unit-test (https://github.com/a (...)⠇ Compiling tests: libft-unit-test (https://github.com/a (...)⠏ Compiling tests: libft-unit-test (https://github.com/a (...)⠋ Compiling tests: libft-unit-test (https://github.com/a (...)⠙ Compiling tests: libft-unit-test (https://github.com/a (...)⠹ Compiling tests: libft-unit-test (https://github.com/a (...)⠸ Compiling tests: libft-unit-test (https://github.com/a (...)⠼ Compiling tests: libft-unit-test (https://github.com/a (...)⠴ Compiling tests: libft-unit-test (https://github.com/a (...)⠦ Compiling tests: libft-unit-test (https://github.com/a (...)⠧ Compiling tests: libft-unit-test (https://github.com/a (...)⠇ Compiling tests: libft-unit-test (https://github.com/a (...)⠏ Compiling tests: libft-unit-test (https://github.com/a (...)⠋ Compiling tests: libft-unit-test (https://github.com/a (...)⠙ Compiling tests: libft-unit-test (https://github.com/a (...)⠹ Compiling tests: libft-unit-test (https://github.com/a (...)⠸ Compiling tests: libft-unit-test (https://github.com/a (...)⠼ Compiling tests: libft-unit-test (https://github.com/a (...)⠴ Compiling tests: libft-unit-test (https://github.com/a (...)⠦ Compiling tests: libft-unit-test (https://github.com/a (...)⠧ Compiling tests: libft-unit-test (https://github.com/a (...)⠇ Compiling tests: libft-unit-test (https://github.com/a (...)⠏ Compiling tests: libft-unit-test (https://github.com/a (...)⠋ Compiling tests: libft-unit-test (https://github.com/a (...)⠙ Compiling tests: libft-unit-test (https://github.com/a (...)⠹ Compiling tests: libft-unit-test (https://github.com/a (...)✔ Compiling tests: libft-unit-test (https://github.com/alelievr/libft-unit-test)
-ℹ Testing:
-ft_isalpha      : [OK] 
-ft_isdigit      : [OK] 
-ft_isalnum      : [OK] 
-ft_isascii      : [OK] 
-ft_isprint      : [OK] 
-ft_strlen       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
-ft_memset       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
-ft_bzero        : [OK] [OK] [OK] [OK] 
-ft_memcpy       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [CRASH] 
-[crash]: your memcpy does not behave well with NULL as both params with size
-
-ft_memmove      : [MISSING]
-ft_strlcpy      : [FAILED] [OK] [FAILED] [FAILED] [FAILED] [OK] [OK] 
-[fail]: your strlcpy does not works with basic input
-[fail]: your strlcpy overflow the dest
-[fail]: your strlcpy does works whe size < strlen(src)
-[fail]: your strlcpy does not works with 0-length string
-
-ft_strlcat      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
-ft_toupper      : [OK] 
-ft_tolower      : [OK] 
-ft_strchr       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
-ft_strrchr      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
-ft_strncmp      : [OK] [OK] [OK] [OK] [OK] [OK] [FAILED] [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] 
-[fail]: your strncmp does not cast in unsigned char the diff
-[fail]: your strncmp does not work with non ascii chars
-
-ft_memchr       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
-ft_memcmp       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
-ft_strnstr      : [MISSING]
-ft_atoi         : [OK] [FAILED] [OK] [FAILED] [OK] [OK] [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [OK] 
-[fail]: your atoi does not work with positive numbers
-[fail]: your atoi does not work with random numbers
-[fail]: your atoi does not work with int max value
-
-ft_calloc       : [OK] [OK] [OK] [OK] [OK] 
-ft_strdup       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
-ft_substr       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
-ft_strjoin      : [FAILED] [FAILED] [FAILED] [OK] [FAILED] 
-[fail]: your strjoin does not work with basic input
-[fail]: your strjoin does not allocate the memory
-[fail]: your strjoin does not work with overlap input
-[fail]: your strjoin does not set \0 to the end of the string
-
-ft_strtrim      : [FAILED] [FAILED] [FAILED] [CRASH] [OK] [KO] [FAILED] [OK] [FAILED] 
-[fail]: your strtrim does not work with basic input
-[fail]: your strtrim does not work with basic input
-[fail]: your strtrim does not work with basic input
-[crash]: your strtrim does not work with full blank input
-[KO]: your strtrim did not allocate the good size so the \0 test may be false
-[fail]: your strtrim does not allocate memory
-[fail]: your strtrim does not set \0 to the end of the string
-
-ft_split        : [CRASH] [CRASH] [CRASH] [CRASH] [CRASH] [CRASH] [FAILED] [CRASH] [CRASH] [CRASH] 
-[crash]: your split does not work with basic input
-[crash]: your split does not work with full space string
-[crash]: your split does not work with one word
-[crash]: your split does not work with one word
-[crash]: your split does not work with empty string
-[crash]: your split does not work with full string
-[fail]: your split will segfault in case --> *str="\0aa\0bbb" c='\0'
-[crash]: your split does not work with basic input
-[crash]: you did not protect your split
-[crash]: your split does not work with basic input
-
-ft_itoa         : [FAILED] [FAILED] [FAILED] [FAILED] [FAILED] [OK] [KO] [KO] [OK] 
-[fail]: your itoa does not work with basic input
-[fail]: your itoa does not work with random number
-[fail]: your itoa does not work with max int
-[fail]: your itoa does not work with min int
-[fail]: your itoa don't set \0 at the end of the string
-[KO]: your itoa does not allocate the good size so the \0 test may be false
-[KO]: your itoa does not allocate the good size so the \0 test may be false
-
-ft_strmapi      : [MISSING]
-ft_striteri     : [MISSING]
-ft_putchar_fd   : [OK] [OK]  
-ft_putstr_fd    : [OK]  [OK]  
-ft_putendl_fd   : [OK]  [OK] 
-ft_putnbr_fd    : [OK] [OK] [OK] [OK] [OK] 
-
-[crash]: your memcpy does not behave well with NULL as both params with size
- Test code:
- 	ft_memcpy(((void *)0), ((void *)0), 3);
- 
- 
- [fail]: your strlcpy does not works with basic input
- Test code:
- 	char *str = "the cake is a lie !\0I'm hidden lol\r\n";
- 	char buff1[0xF00];
- 	char buff2[0xF00];
- 
- 	__builtin___memset_chk (buff1, 'A', sizeof(buff1) - 1, __builtin_object_size (buff1, 0));
- 	__builtin___memset_chk (buff2, 'A', sizeof(buff2) - 1, __builtin_object_size (buff2, 0));
- 	buff1[sizeof(buff1) - 1] = 0;
- 	buff2[sizeof(buff1) - 1] = 0;
- 	__builtin___strlcpy_chk (buff1, str, sizeof(buff1), __builtin_object_size (buff1, 2 > 1 ? 1 : 0));
- 	ft_strlcpy(buff2, str, sizeof(buff2));
- 	if (!memcmp(buff1, buff2, strlen(str) + 1))
- 		exit(TEST_SUCCESS);
- 	exit(TEST_FAILED);
- 
- Diffs:
-      strlcpy: ||
-   ft_strlcpy: |the cake is a lie !AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA|
- 
- [fail]: your strlcpy overflow the dest
- Test code:
- 	char *str = "BBBB";
- 	char buff1[0xF00];
- 	char buff2[0xF00];
- 
- 	__builtin___memset_chk (buff1, 'A', 20, __builtin_object_size (buff1, 0));
- 	__builtin___memset_chk (buff2, 'A', 20, __builtin_object_size (buff2, 0));
- 	__builtin___strlcpy_chk (buff1, str, sizeof(buff1), __builtin_object_size (buff1, 2 > 1 ? 1 : 0));
- 	ft_strlcpy(buff2, str, sizeof(buff2));
- 	if (!memcmp(buff1, buff2, 20))
- 		exit(TEST_SUCCESS);
- 	for (register int __i = 0; __i < 20; ++__i)
- 	for (register int __i = 0; __i < 20; ++__i)
- 	exit(TEST_FAILED);
- 
- Diffs:
-      strlcpy: |\x0  \x42 \x42 \x42 \x0  \x41 \x41 \x41 \x41 \x41 \x41 \x41 \x41 \x41 \x41 \x41 \x41 \x41 \x41 \x41 |
-   ft_strlcpy: |\x42 \x42 \x42 \x42 \x41 \x41 \x41 \x41 \x41 \x41 \x41 \x41 \x41 \x41 \x41 \x41 \x41 \x41 \x41 \x41 |AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA|
- 
- [fail]: your strlcpy does works whe size < strlen(src)
- Test code:
- 	char *str = "hello !";
- 	char buff1[0xF00];
- 	char buff2[0xF00];
-...
-
-File too large. To see full report open: /Users/ale-roux/francinette/temp/libft/alelievr/result.log
-
-⠋ Compiling tests: fsoares (my own)⠙ Compiling tests: fsoares (my own)⠹ Compiling tests: fsoares (my own)⠸ Compiling tests: fsoares (my own)⠼ Compiling tests: fsoares (my own)⠴ Compiling tests: fsoares (my own)⠦ Compiling tests: fsoares (my own)⠧ Compiling tests: fsoares (my own)⠇ Compiling tests: fsoares (my own)⠏ Compiling tests: fsoares (my own)⠋ Compiling tests: fsoares (my own)⠙ Compiling tests: fsoares (my own)⠹ Compiling tests: fsoares (my own)⠸ Compiling tests: fsoares (my own)⠼ Compiling tests: fsoares (my own)⠴ Compiling tests: fsoares (my own)⠦ Compiling tests: fsoares (my own)⠧ Compiling tests: fsoares (my own)⠇ Compiling tests: fsoares (my own)⠏ Compiling tests: fsoares (my own)⠋ Compiling tests: fsoares (my own)⠙ Compiling tests: fsoares (my own)⠹ Compiling tests: fsoares (my own)⠸ Compiling tests: fsoares (my own)⠼ Compiling tests: fsoares (my own)⠴ Compiling tests: fsoares (my own)⠦ Compiling tests: fsoares (my own)⠧ Compiling tests: fsoares (my own)⠇ Compiling tests: fsoares (my own)⠏ Compiling tests: fsoares (my own)⠋ Compiling tests: fsoares (my own)⠙ Compiling tests: fsoares (my own)⠹ Compiling tests: fsoares (my own)⠸ Compiling tests: fsoares (my own)⠼ Compiling tests: fsoares (my own)⠴ Compiling tests: fsoares (my own)⠦ Compiling tests: fsoares (my own)⠧ Compiling tests: fsoares (my own)⠇ Compiling tests: fsoares (my own)⠏ Compiling tests: fsoares (my own)⠋ Compiling tests: fsoares (my own)⠙ Compiling tests: fsoares (my own)⠹ Compiling tests: fsoares (my own)✖ Compiling tests: fsoares (my own)
-Undefined symbols for architecture x86_64:
-  "_ft_memmove", referenced from:
-      _single_test_memmove in test_memmove-1da320.o
-ld: symbol(s) not found for architecture x86_64
-clang: error: linker command failed with exit code 1 (use -v to see invocation)
-
-Problem compiling the tests
-
-Summary: no bonus
-
-Norminette Errors: ft_strlcat.c, ft_strtok.c
-
-Failed tests: strjoin, libftTester, strmapi, striteri, itoa, memcpy, split, strtrim, strncmp, strlcpy, memmove, strnstr, atoi, fsoares
-
-Passed tests: isalpha, isdigit, isalnum, isascii, isprint, strlen, memset, bzero, memcpy, memmove, strlcpy, strlcat, toupper, tolower, strchr, strrchr, strncmp, memchr, memcmp, strnstr, atoi, calloc, strdup, substr, strjoin, strtrim, split, itoa, strmapi, striteri, putchar_fd, putstr_fd, putendl_fd, putnbr_fd
-
