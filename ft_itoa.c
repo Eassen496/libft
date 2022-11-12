@@ -6,14 +6,14 @@
 /*   By: ale-roux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 23:49:50 by ale-roux          #+#    #+#             */
-/*   Updated: 2022/11/07 00:11:49 by ale-roux         ###   ########.fr       */
+/*   Updated: 2022/11/13 00:35:09 by ale-roux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-static int	ft_intlen(int nb)
+static int	intlen(long int nb)
 {
 	int	len;
 
@@ -23,7 +23,9 @@ static int	ft_intlen(int nb)
 		nb = -nb;
 		len++;
 	}
-	while ((nb / 10) > 0)
+	if (nb == 0)
+		return (1);
+	while (nb > 0)
 	{
 		len++;
 		nb = nb / 10;
@@ -31,29 +33,41 @@ static int	ft_intlen(int nb)
 	return (len);
 }
 
+static int	inttonb(long int nb)
+{
+	long int		ret;
+	static long int	rest = -1;
+
+	if (rest == -1)
+	{
+		if (nb > 0)
+			rest = nb;
+		else
+			rest = -nb;
+	}
+	ret = rest % 10;
+	rest = rest / 10;
+	return (ret + '0');
+}
+
 char	*ft_itoa(int n)
 {
 	int		i;
-	int		x;
 	int		y;
-	char		*nbr;
+	char	*nbr;
 
-	i = ft_intlen(n);
+	i = intlen(n);
 	y = 0;
 	nbr = malloc((i + 1) * sizeof(char));
 	if (!nbr)
 		return (NULL);
+	nbr[i] = '\0';
 	if (n < 0)
 	{
 		nbr[0] = '-';
-		n = -n;
 		y++;
 	}
-	while (i != y)
-	{
-		x = n % 10;
-		n = n / 10;
-		nbr[i--] = x + '0';
-	}
+	while (i > y)
+		nbr[--i] = inttonb(n);
 	return (nbr);
 }

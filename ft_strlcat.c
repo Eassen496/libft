@@ -6,7 +6,7 @@
 /*   By: ale-roux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 14:05:26 by ale-roux          #+#    #+#             */
-/*   Updated: 2022/11/08 19:19:06 by ale-roux         ###   ########.fr       */
+/*   Updated: 2022/11/12 23:48:20 by ale-roux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 
 size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 {
-	size_t	i;
-	size_t	j;
+	unsigned int	i;
+	unsigned int	j;
 
 	if (dstsize == 0 || dstsize <= ft_strlen(dst))
 		return (ft_strlen(src) + dstsize);
