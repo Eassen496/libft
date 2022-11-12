@@ -20,10 +20,10 @@ static int	ft_intlen(int nb)
 	len = 0;
 	if (nb < 0)
 	{
-		len++;
 		nb = -nb;
+		len++;
 	}
-	while ((nb / 10) > 10)
+	while ((nb / 10) > 0)
 	{
 		len++;
 		nb = nb / 10;
@@ -36,7 +36,7 @@ char	*ft_itoa(int n)
 	int		i;
 	int		x;
 	int		y;
-	char	*nbr;
+	char		*nbr;
 
 	i = ft_intlen(n);
 	y = 0;
