@@ -1,29 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ale-roux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/01 10:55:55 by ale-roux          #+#    #+#             */
-/*   Updated: 2022/11/14 16:03:36 by ale-roux         ###   ########.fr       */
+/*   Created: 2022/11/14 14:37:03 by ale-roux          #+#    #+#             */
+/*   Updated: 2022/11/14 15:02:35 by ale-roux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int	i;
+	int		i;
+	int		len;
+	char	*str;
 
 	i = 0;
-	while (s[i])
+	len = ft_strlen((char *)s);
+	str = malloc((len + 1) * sizeof(char));
+	if (!str)
+		return (NULL);
+	while (i < len)
 	{
-		if (s[i] == (char)c)
-			return ((char *)&s[i]);
+		str[i] = (*f)(i, s[i]);
 		i++;
 	}
-	if (s[i] == (char)c)
-		return ((char *)&s[i]);
-	return (0);
+	str[len] = '\0';
+	return (str);
 }

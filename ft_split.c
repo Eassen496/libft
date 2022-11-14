@@ -5,80 +5,105 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ale-roux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/02 20:35:27 by ale-roux          #+#    #+#             */
-/*   Updated: 2022/11/13 18:27:09 by ale-roux         ###   ########.fr       */
+/*   Created: 2022/11/14 12:59:09 by ale-roux          #+#    #+#             */
+/*   Updated: 2022/11/14 14:26:46 by ale-roux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include <stdlib.h>
+#include "libft.h"
 
-static int  ft_tabclen(char *str, char c)
+static char	*split_free(char *str)
 {
-    int i;
-    int count;
-
-    i = 0;
-    count = 0;
-    while (str[i] != '\0')
-    {
-        if (str[i] == c)
-            count++;
-            while (str[i] == c)
-              i++;
-        i++;
-    }
-    return (count + 1);
+	free(str);
+	return (NULL);
 }
 
-int ft_strclen(char *str, char c)
+static char	*split_substr(char const *s, unsigned int start, size_t len)
 {
-    int         i;
-    static int  ii = 0;
+	unsigned int	i;
+	unsigned int	j;
+	char			*str;
 
-    i = 0;
-    while (str[ii] != '\0' && str[ii] != c)
-    {
-        i++;
-        ii++;
-    }
-    while (str[ii] == c)
-      ii++;
-    return (i);
+	i = 0;
+	j = 0;
+	if (!s)
+		return (0);
+	if (len > ft_strlen(s) - start)
+		len = ft_strlen(s) - start;
+	if (start > ft_strlen(s))
+		len = 0;
+	str = malloc(sizeof(char) * (len + 1));
+	if (!str)
+		return (split_free(str));
+	while (s[i])
+	{
+		if (i >= start && j < len)
+			str[j++] = s[i];
+		i++;
+	}
+	str[j] = '\0';
+	return (str);
 }
 
-static char *ft_strccpy(char *str, char c)
+static void	*split_freetab(char **tab, int w)
 {
-    static int  i = 0;
-    char        *cpy;
-    int     x;
+	int	i;
 
-    x = 0;
-    cpy = malloc((ft_strclen(str, c) + 1) * sizeof (char));
-    while (str[i] != c && str[i] != '\0')
-        cpy[x++] = str[i++];
-    cpy[x] = '\0';
-    while (str[i] == c)
-      i++;
-    return (cpy);
+	i = 0;
+	while (i != w)
+	{
+		free (tab[i]);
+		i++;
+	}
+	free(tab);
+	return (NULL);
 }
 
-char    **ft_split(char const *s, char c)
+static int	split_sep(char const *s, char c)
 {
-    char    **tab;
-    int     tablen;
-    int     i;
-    int     len;
+	char	str;
+	int		i;
+	int		j;
 
-    i = 0;
-    len = ft_strlen((char *)s);
-    tablen = ft_tabclen((char *)s, c);
-    tab = malloc((tablen + 1 ) * sizeof(char *));
-    while (i < tablen)
-    {
-        tab[i] = ft_strccpy((char *)s, c);
-        i++;
-    }
-	tab[i] = 0;
-    return (tab);
+	str = c;
+	i = 0;
+	j = 0;
+	while (s[i] != '\0')
+	{
+		if (str == c && s[i] != c)
+			j++;
+		str = s[i];
+		i++;
+	}
+	return (j);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**tab;
+	int		w;
+	int		i;
+	int		j;
+
+	w = 0;
+	i = 0;
+	j = 0;
+	tab = (char **)malloc(sizeof(char *) * (split_sep(s, c) + 1));
+	if (!tab)
+		return (0);
+	while (s[j] && s[i] && w < split_sep(s, c))
+	{
+		i = j;
+		while (s[i] == c && s[i])
+			i++;
+		j = i;
+		while (s[j] != c && s[j])
+			j++;
+		tab[w++] = split_substr(s, i, j - i);
+		if (!tab[w - 1])
+			return (split_freetab(tab, w));
+	}
+	tab[w] = NULL;
+	return (tab);
 }
