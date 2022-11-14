@@ -6,7 +6,7 @@
 /*   By: ale-roux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 23:49:50 by ale-roux          #+#    #+#             */
-/*   Updated: 2022/11/13 00:35:09 by ale-roux         ###   ########.fr       */
+/*   Updated: 2022/11/14 12:19:43 by ale-roux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,31 +33,16 @@ static int	intlen(long int nb)
 	return (len);
 }
 
-static int	inttonb(long int nb)
-{
-	long int		ret;
-	static long int	rest = -1;
-
-	if (rest == -1)
-	{
-		if (nb > 0)
-			rest = nb;
-		else
-			rest = -nb;
-	}
-	ret = rest % 10;
-	rest = rest / 10;
-	return (ret + '0');
-}
-
 char	*ft_itoa(int n)
 {
-	int		i;
-	int		y;
-	char	*nbr;
+	int				i;
+	int				y;
+	char			*nbr;
+	unsigned int	saveme;
 
 	i = intlen(n);
 	y = 0;
+	saveme = n;
 	nbr = malloc((i + 1) * sizeof(char));
 	if (!nbr)
 		return (NULL);
@@ -65,9 +50,13 @@ char	*ft_itoa(int n)
 	if (n < 0)
 	{
 		nbr[0] = '-';
+		saveme = -n;
 		y++;
 	}
 	while (i > y)
-		nbr[--i] = inttonb(n);
+	{
+		nbr[--i] = (saveme % 10) + 48;
+		saveme = saveme / 10;
+	}
 	return (nbr);
 }

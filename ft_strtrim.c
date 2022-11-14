@@ -6,61 +6,55 @@
 /*   By: ale-roux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 01:24:11 by ale-roux          #+#    #+#             */
-/*   Updated: 2022/11/08 09:32:57 by ale-roux         ###   ########.fr       */
+/*   Updated: 2022/11/13 17:08:36 by ale-roux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-static int	charsrch(char *s1, char *set)
+static int	is_set(const char c, const char *set)
 {
 	int	i;
-	int	x;
 
 	i = 0;
-	x = 0;
-	while (set[x])
+	if (set)
 	{
-		if (s1[i++] == set[x])
-			x = 0;
-		x++;
+		while (set[i])
+		{
+			if (set[i] == c)
+				return (1);
+			i++;
+		}
 	}
-	return (i);
-}
-
-static int	charrsrch(char *s1, char *set)
-{
-	int	i;
-	int	x;
-	int	len;
-
-	x = 0;
-	i = ft_strlen(s1);
-	len = ft_strlen(s1);
-	while (set[x])
-	{
-		if (s1[i--] == set[x])
-			x = 0;
-		x++;
-	}
-	return (i);
+	return (0);
 }
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int		i;
-	int		x;
-	int		mallocsize;
-	char	*str;
+	char	*res;
+	int		tab[3];
 
-	i = charsrch((char *)s1, (char *)set);
-	mallocsize = ft_strlen((char *)s1) - charrsrch((char *)s1, (char *)set) - i;
-	str = malloc((mallocsize + 1) * sizeof(char));
-	if (!str)
-		return (NULL);
-	x = 0;
-	while (x <= mallocsize)
-		str[x++] = s1[i++];
-	return (str);
+	tab[0] = 0;
+	tab[2] = 0;
+	if (set[0] == '\0' || s1[0] == '\0')
+		return (ft_strdup(s1));
+	if (s1)
+	{
+		tab[1] = ft_strlen(s1);
+		while (is_set(s1[tab[0]], set) == 1 && s1[tab[0]])
+			tab[0]++;
+		while (is_set(s1[tab[1] - 1], set) == 1 && tab[1] > tab[0])
+			tab[1]--;
+		res = malloc(sizeof(char) * (tab[1] - tab[0] + 1));
+		if (!res)
+			return (NULL);
+		if (tab[0] > tab[1])
+			return (res);
+		while (tab[0] < tab[1])
+			res[tab[2]++] = s1[tab[0]++];
+		res[tab[2]] = '\0';
+		return (res);
+	}
+	return (NULL);
 }
