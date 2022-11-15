@@ -6,12 +6,22 @@
 /*   By: ale-roux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 01:24:11 by ale-roux          #+#    #+#             */
-/*   Updated: 2022/11/15 15:25:01 by ale-roux         ###   ########.fr       */
+/*   Updated: 2022/11/15 16:32:41 by ale-roux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+
+static char	*place(char *res, int *tab)
+{
+	if (!res)
+		return (NULL);
+	if (tab[0] > tab[1])
+		return (res);
+	else
+		return (res);
+}
 
 static int	is_set(const char c, const char *set)
 {
@@ -49,10 +59,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 		while (is_set(s1[tab[1] - 1], set) == 1 && tab[1] > tab[0])
 			tab[1]--;
 		res = malloc(sizeof(char) * (tab[1] - tab[0] + 1));
-		if (!res)
-			return (NULL);
-		if (tab[0] > tab[1])
-			return (res);
+		if (!res || tab[0] > tab[1])
+			return (place(res, tab));
 		while (tab[0] < tab[1])
 			res[tab[2]++] = s1[tab[0]++];
 		res[tab[2]] = '\0';
