@@ -6,7 +6,7 @@
 /*   By: ale-roux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 12:59:09 by ale-roux          #+#    #+#             */
-/*   Updated: 2022/11/14 14:26:46 by ale-roux         ###   ########.fr       */
+/*   Updated: 2022/11/15 15:27:17 by ale-roux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,8 @@ static int	split_sep(char const *s, char c)
 	str = c;
 	i = 0;
 	j = 0;
+	if (!s)
+		return (0);
 	while (s[i] != '\0')
 	{
 		if (str == c && s[i] != c)
@@ -89,6 +91,8 @@ char	**ft_split(char const *s, char c)
 	w = 0;
 	i = 0;
 	j = 0;
+	if (!s)
+		return (NULL);
 	tab = (char **)malloc(sizeof(char *) * (split_sep(s, c) + 1));
 	if (!tab)
 		return (0);

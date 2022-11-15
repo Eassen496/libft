@@ -6,7 +6,7 @@
 /*   By: ale-roux <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 01:24:11 by ale-roux          #+#    #+#             */
-/*   Updated: 2022/11/13 17:08:36 by ale-roux         ###   ########.fr       */
+/*   Updated: 2022/11/15 15:25:01 by ale-roux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	tab[0] = 0;
 	tab[2] = 0;
+	if (!s1 || !set)
+		return (NULL);
 	if (set[0] == '\0' || s1[0] == '\0')
 		return (ft_strdup(s1));
 	if (s1)
